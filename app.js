@@ -50,3 +50,99 @@
 // console.log(users.length)
 // console.log(users[random].name)
 
+//task 1
+
+
+let shoppingList = [
+    "Milk",
+    "Eggs",
+    "Bread",
+    ["Apples", "Bananas", "Oranges"],
+    ["Potatoes", "Tomatoes", "Onions"]
+];
+console.log(shoppingList[0])
+shoppingList.push('carrots')
+console.log(shoppingList)
+shoppingList.pop()
+//arr.splice(indexvalue,deletevalue,additems)
+let items = [
+    "Milk",
+    "Eggs",
+    "Bread",
+    ["Apples", "Bananas", "Oranges"],
+    ["Potatoes", "Tomatoes", "Onions"]
+];
+console.log(items);
+items[items.length-1].splice(1,1,"cucumbers");
+items[items.length-1].splice(2,1,'Bell Peppers');
+
+// task 2
+
+let student = {
+    name: "Amit",
+    age: 20,
+    grade: "A",
+    address: {
+        street: "123 Main St",
+        city: "Anytown",
+        country: "India"
+    }
+};
+console.log(student.name)
+student.phone="123-456-7890"
+// student.Gender="Male" 
+// student.Subject="Maths"
+console.log(student)
+delete student.grade;
+console.log(student)
+//  delete student.address.country;
+// student.address.state="kerala";
+student.age="21"
+
+//conditionals assignment
+//task 1
+
+let num=100
+if(num>0){
+    console.log("the number is +ve")
+}
+else if(num>=0){
+    console.log("the number is Zero")
+}
+else{
+    console.log("the number is -ve")
+}
+
+//task2
+
+//90>= and <=100 --grade A
+//80>= and <=89 --grade B
+//70>= and <=79 --gade C
+//60>= and <=69 --grade D
+//<60--grade F
+
+let grade=95
+if(grade>=90 && grade<=100){
+    console.log('Your Grade is: A')
+}
+else if(grade>=80 && grade<=89){
+    console.log("your grade is:B")
+}
+else if(grade>=70 && grade<=79){
+    console.log("your grade is:C ")
+}
+else if(grade>=60 &&  grade<=69){
+    console.log("your grade is:D")
+}
+else{
+    console.log("your Grade is : F !!!!")
+}
+
+// task 3
+num='hi goooys'
+if(num){
+    console.log("Truthy")
+}
+else{
+    console.log("falsy")
+}
